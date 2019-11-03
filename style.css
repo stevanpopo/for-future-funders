@@ -55,26 +55,7 @@ p > a:visited {
 }
 
 #tweet {
-	float: right;
-	margin-top: 10px;
-}
-
-hr.style-eight {
-    padding: 0;
-    border: none;
-    border-top: 1px solid #333;
-    color: #333;
-    text-align: center;
-}
-
-hr.style-eight:after {
-    content: "Â§";
-    display: inline-block;
-    position: relative; 
-    top: -0.7em;  
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: rgb(246,246,246);
+	text-align: right;
 }
 
 hr {
