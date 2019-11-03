@@ -52,7 +52,7 @@ table {
 }
 
 /* typography */
-p {
+p, li {
 	font-family: 'PT Serif', serif;
 	color: rgba(72, 72, 72, 0.9);
 	font-size: 16px;
@@ -97,6 +97,11 @@ h5:not(:first-child){
 }
 
 /* layout */
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
 section {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
@@ -107,59 +112,24 @@ section, header {
 	border-bottom: 1px solid rgb(72, 72, 72);
 }
 
-footer {
-	padding: 1rem 0;
+.followers {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
-/* dt {
-	font-family: 'PT Serif', serif;
-	font-weight: 700; 
-	font-size: 20px;
-	margin-bottom: 0.3em;
-} */
+footer {
+	text-align: center;
+	width: 80%;
+	margin: 1rem auto;
+}
 
-/* dd {
-	font-family: 'PT Serif', serif;
-	font-weight: 400; 
-	font-size: 16px;
-} */
-
-/* dd > a, dd > a:visited {
-	color: rgba(72,72,72,0.8);
-} */
-
-/* dd > a:hover {
-	color: rgba(72,72,72,0.6);
-} */
-
-/* li {
-	font-family: 'PT Serif', serif;
-	font-weight: 400; 
-	font-size: 16px;
-	margin-left: 0;
-	padding-left: 0;
-	line-height: 1.5em;
-} */
+li {
+	padding: 2px 0;
+}
 
 em {
 	font-family: 'Merriweather', serif;
 	color: rgb(222,27,27);
-}
-
-/* PAUSe */
-/* ul, dl, dd {
-	list-style: none;
-	margin: 0 0 20px 0;
-	padding-left: 0;
-	color: rgb(72,72,72);
-} */
-
-/* dl:first-child {
-	margin-top: 14px;
-} */
-
-footer {
-	text-align: center;
 }
 
 a, a:visited {
@@ -171,15 +141,6 @@ a:hover {
 	color: rgba(116,175,173,0.7);
 }
 
-/* li > a, li > a:visited {
-	color: rgb(72,72,72);;
-}
-
-li > a:hover {
-	color: rgba(72,72,72,0.8);
-} */
-
-
 em > a, em> a:visited {
 	color: rgba(222,27,27,0.9);
 }
@@ -188,54 +149,8 @@ em > a:hover {
 	color: rgba(222,27,27,0.6);
 }
 
-/* p > a {
-	color: rgba(112,171,143,1);
-}
-
-p > a:hover {
-	color: rgba(112,171,143, 0.8);
-}
-
-p > a:visited {
-	color: rgba(112,171,143, 0.8);
-} */
-
 #tweet {
 	text-align: right;
-}
-
-/* hr {
-  color: #333;
-} */
-
-
-/* Layout */
-
-.container {
-	max-width: 80%;
-	margin: 0 auto;
-}
-
-/* .col {
-	float: left;
-}
-
-.left {
-	width: 33.33%;
-}
-
-.right {
-	width: 66.66%;
-} */
-
-/* .row {
-	overflow: hidden;
-} */
-
-footer {
-	/* margin-top: 35px; */
-	width: 80%;
-	margin: 0 auto;
 }
 
 /* responsive elements */
