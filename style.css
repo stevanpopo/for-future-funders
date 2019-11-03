@@ -96,6 +96,28 @@ h5:not(:first-child){
 	margin-top: 1rem;
 }
 
+em {
+	font-family: 'Merriweather', serif;
+	color: rgb(222,27,27);
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: rgb(116,175,173);
+}
+
+a:hover {
+	color: rgba(116,175,173,0.7);
+}
+
+em > a, em> a:visited {
+	color: rgba(222,27,27,0.9);
+}
+
+em > a:hover {
+	color: rgba(222,27,27,0.6);
+}
+
 /* layout */
 .container {
 	max-width: 80%;
@@ -127,119 +149,42 @@ li {
 	padding: 2px 0;
 }
 
-em {
-	font-family: 'Merriweather', serif;
-	color: rgb(222,27,27);
-}
-
-a, a:visited {
-	text-decoration: none;
-	color: rgb(116,175,173);
-}
-
-a:hover {
-	color: rgba(116,175,173,0.7);
-}
-
-em > a, em> a:visited {
-	color: rgba(222,27,27,0.9);
-}
-
-em > a:hover {
-	color: rgba(222,27,27,0.6);
-}
-
 #tweet {
 	text-align: right;
 }
 
 /* responsive elements */
-
 @media screen and (max-width: 1010px) {
-
-    .container {
-    	max-width: 90%;
-    }
-
-}
-
-@media screen and (max-width: 860px) {
-
-    h1 {
-    	font-size: 64px;
-    }
-
-    .left-inner, .right-inner {
-    	width: 100%;
-    	padding-right: 0;
-    	padding-left: 0;
-    }
-
+	.container {
+		max-width: 90%;
+	}
 }
 
 @media screen and (max-width: 730px) {
-
 	.container {
-    	max-width: 95%;
-    }
-
-    h1 {
-    	font-size: 52px;
-    }
-
-    h2 {
-    	font-size: 20px;
-    }
-
-    dt {
-    	font-size: 18px;
-    }
-
-    footer {
-    	width: 100%;
-    }
-
-}
-
-@media screen and (max-width: 570px) {
-
-    h1 {
-    	font-size: 42px;
-    }
-
-    .left, .right {
-    	width: 100%;
-    }
-
-    #last-h2 {
-    	display: none;
-    }
-
-    h4 {
-    	text-align: left;
-    }
-
-    h2 {
-    	margin-bottom: 5px;
-    }
-
-    #subtitle {
-    	font-size: 12px;
-    	text-align: center;
-    	margin-bottom: 2px;
-    }
-
+		max-width: 95%;
+	}
+	h1 {
+		font-size: 2.75rem;
+	}
+	#tweet {
+		text-align: center;
+		margin: .5rem;
+	}
+	h2 {
+		font-size: 1.25rem;
+		margin-bottom: 1rem;
+	}
+	section {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 480px) {
-
-    h1 {
-    	font-size: 34px;
-
-    }
-
-    .container {
-    	max-width: 98%;
-    }
-
+	h1 {
+		font-size: 2rem;
+	}
+	.container {
+		max-width: 98%;
+	}
 }
